@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="seekbar.css">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <div class="container bg-black flex">
+        <div class="left border-radius m2">
+            <div class="home m1 bg-grey p1 border-radius">
+                <img class="close" src="SVG/close.svg" alt="Close" id="close">
+                <ul>
+                    <li class="logo">
+                        <img class="invert logoimg" src="SVG/logo1.svg" alt="Spotify">
+                        <h2>Spotify</h2>
+                    </li>
+                    <li class="homebtn" ><img class="invert" src="SVG/home.svg" alt="">
+                        <h3>Home</h3>
+                    </li>
+                    <li class="homebtn"><img class="invert" src="SVG/premium.svg" alt="">
+                        <h3>Premium</h3>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="library border-radius bg-grey p1 m1">
+                <div class="lib">
+                    <img class="invert lib2" src="SVG/library.svg" alt="">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songlist">
+                    <div class="create-list flex p1">
+                        <h4>Create your first playlists</h4>
+                        <h6>It`s easy i will help you</h6>
+                        <button class="create-list-btn">Create playlist</button>
+                    </div>
+                    <div class="create-list flex p1">
+                        <h4>Let's find some podcast to follow</h4>
+                        <h6>We'll keep you updated on new episodes</h6>
+                        <button class="create-list-btn">Browse podcasts</button>
+                    </div>
+                </div>
+                <div class="library-footer">
+                    <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                    <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                </div>
+            </div>
+        </div>
+        <div class="right m2 border-radius bg-grey">
+            <div class="header flex">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="search">
+                    <img src="SVG/search-icon.svg" alt="">
+                    <input type="text" placeholder="Artists, songs, or podcasts">
+                </div>
+                <div class="auth-buttons flex">
+                    <button class="signupbtn" id="signup">Sign Up</button>
+                    <button class="loginbtn" id="login">Log In</button>
+                </div>
+            </div>
+            <div class="spotifylist bg-grey">
+                <h1>Spotify lists</h1>
+                <div class="cardlist">
+                    <!-- <div class="card">
+                        <div id="playi" class="play">
+                            <img src="SVG/play.svg" alt="Play">
+                        </div>
+                        <img src="SVG/music.svg" alt="Music">
+                        <h4>Song Name</h4>
+                        <h6>Artist</h6>
+
+                    </div> -->
+                </div>
+                <div class="playbar">
+                    <div class="abovebar">
+                        <div class="info">
+                            <div class="song-name"> 
+                            </div>
+                        </div>
+                        <div class="songbutton">
+                            <img id="prev" class="invert playbtn" src="SVG/prev.svg" alt="Previous">
+                            <img id="play" class="playbtn" src="SVG/play1.svg" alt="Play">
+                            <img id="next" class="invert playbtn" src="SVG/next.svg" alt="Next">
+                        </div>
+                        <div class="volume flex">
+                            <button id="muteBtn" class="mute-btn" type="button" aria-label="Mute">🔊</button>
+                            <input style="cursor: pointer;" id="volumeSlider" type="range" min="0" max="100" value="100">
+                        </div>
+                    </div>
+                    <div class="belowbar">
+                        <div class="seekbar">
+                            <div class="progress"></div>
+                            <div class="circle"></div>
+                        </div>
+                       
+                        <div class="songtime flex">1:23 / 3:45</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="seekbar.js"></script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="seekbar.css">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <div class="container bg-black flex">
+        <div class="left border-radius m2">
+            <div class="home m1 bg-grey p1 border-radius">
+                <img class="close" src="SVG/close.svg" alt="Close" id="close">
+                <ul>
+                    <li class="logo">
+                        <img class="invert logoimg" src="SVG/logo1.svg" alt="Spotify">
+                        <h2>Spotify</h2>
+                    </li>
+                    <li class="homebtn" ><img class="invert" src="SVG/home.svg" alt="">
+                        <h3>Home</h3>
+                    </li>
+                    <li class="homebtn"><img class="invert" src="SVG/premium.svg" alt="">
+                        <h3>Premium</h3>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="library border-radius bg-grey p1 m1">
+                <div class="lib">
+                    <img class="invert lib2" src="SVG/library.svg" alt="">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songlist">
+                    <div class="create-list flex p1">
+                        <h4>Create your first playlists</h4>
+                        <h6>It`s easy i will help you</h6>
+                        <button class="create-list-btn">Create playlist</button>
+                    </div>
+                    <div class="create-list flex p1">
+                        <h4>Let's find some podcast to follow</h4>
+                        <h6>We'll keep you updated on new episodes</h6>
+                        <button class="create-list-btn">Browse podcasts</button>
+                    </div>
+                </div>
+                <div class="library-footer">
+                    <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                    <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                </div>
+            </div>
+        </div>
+        <div class="right m2 border-radius bg-grey">
+            <div class="header flex">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="search">
+                    <img src="SVG/search-icon.svg" alt="">
+                    <input type="text" placeholder="Artists, songs, or podcasts">
+                </div>
+                <div class="auth-buttons flex">
+                    <button class="signupbtn" id="signup">Sign Up</button>
+                    <button class="loginbtn" id="login">Log In</button>
+                </div>
+            </div>
+            <div class="spotifylist bg-grey">
+                <h1>Spotify lists</h1>
+                <div class="cardlist">
+                    <!-- <div class="card">
+                        <div id="playi" class="play">
+                            <img src="SVG/play.svg" alt="Play">
+                        </div>
+                        <img src="SVG/music.svg" alt="Music">
+                        <h4>Song Name</h4>
+                        <h6>Artist</h6>
+
+                    </div> -->
+                </div>
+                <div class="playbar">
+                    <div class="abovebar">
+                        <div class="info">
+                            <div class="song-name"> 
+                            </div>
+                        </div>
+                        <div class="songbutton">
+                            <img id="prev" class="invert playbtn" src="SVG/prev.svg" alt="Previous">
+                            <img id="play" class="playbtn" src="SVG/play1.svg" alt="Play">
+                            <img id="next" class="invert playbtn" src="SVG/next.svg" alt="Next">
+                        </div>
+                        <div class="volume flex">
+                            <button id="muteBtn" class="mute-btn" type="button" aria-label="Mute">🔊</button>
+                            <input style="cursor: pointer;" id="volumeSlider" type="range" min="0" max="100" value="100">
+                        </div>
+                    </div>
+                    <div class="belowbar">
+                        <div class="seekbar">
+                            <div class="progress"></div>
+                            <div class="circle"></div>
+                        </div>
+                       
+                        <div class="songtime flex">1:23 / 3:45</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="seekbar.js"></script>
+</body>
+
+</html>
