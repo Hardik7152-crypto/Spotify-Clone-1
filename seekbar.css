@@ -1,0 +1,10 @@
+.seekbar{
+    width: 60%;
+    height: 4px;
+    background: #535353;
+    border-radius: 10px;
+    position: absolute;
+    left: 20%;
+    cursor: pointer;
+}
+
